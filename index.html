@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neumorphic Clock</title>
+    <link rel="stylesheet" href="style-white.css">
+    <link rel="stylesheet" href="analog.css">
+</head>
+<body>
+    <div class="clock"> 
+        <div class="clock-background">
+            <span class="horizontal-indicators"></span>      
+            <span class="hour-hand"></span>      
+            <span class="minute-hand"></span>       
+            <span class="second-hand" id="second"></span>      
+        </div>
+        <!-- vertical-indicators-->
+    </div>
+</body>
+<script>
+    function clockUpdate() {
+ var now = new Date();
+ document.getElementById("second").style.transform = 'rotate(' + (
+    now.getSeconds() * 6
+  ) + 'deg)';
+}
+
+clockUpdate();
+setInterval(clockUpdate, 1000);
+</script>
+</html>

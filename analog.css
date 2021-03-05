@@ -1,0 +1,109 @@
+
+
+.clock {
+    position:relative;
+    width:50em;
+    height:50em;
+    margin:10em auto;
+    border-radius:50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 
+        -10px -10px 30px var(--shadow-light), 
+        10px 10px 30px var(--shadow-dark);
+}
+
+.clock:before,
+.clock:after,
+.horizontal-indicators:before,
+.horizontal-indicators:after {
+    position:absolute;
+    text-align:center;
+}
+
+.clock-background{
+    position: absolute;
+    background-color: var(--background-dark);
+    width: 97%;
+    height: 97%;
+    border-radius: 50%;
+    box-shadow: 
+        inset -10px -10px 30px var(--shadow-light), 
+        inset 10px 10px 30px var(--shadow-dark);
+}
+
+.clock:before,
+.clock:after {
+    left: 49%;
+    left: calc(50% - 4px);
+    width: 4px;
+    height: 5em;
+}
+
+.horizontal-indicators:before,
+.horizontal-indicators::after {
+    top: 49%;
+    top: calc(50% - 4px);
+    width: 5em;
+    height: 4px;
+}
+
+.clock:before, 
+.clock:after,
+.horizontal-indicators:before,
+.horizontal-indicators::after {
+    z-index: 2; 
+    content: "";
+    background-color: var(--background);
+    border-radius: 2px;
+    box-shadow: 
+        -2px -2px 4px var(--shadow-light), 
+        2px 2px 4px var(--shadow-dark);
+}
+
+.clock::before{
+    top:1em;
+}
+
+.clock:after {
+    bottom:1em;
+}
+
+.horizontal-indicators:after {
+    right:0em;
+}
+
+.hour-hand,
+.minute-hand,
+.second-hand {
+    z-index:2;
+    left: 50%;
+    position: absolute;
+    width:0.5em;
+    background-color:var(--background);
+    border-radius: 2px;
+}
+
+.hour-hand,
+.minute-hand{
+    box-shadow: 
+    -2px -2px 4px var(--shadow-light), 
+    2px 2px 4px var(--shadow-dark);
+    transform-origin: 50% 100%; /*left, top*/
+}
+
+.hour-hand{
+    height: 25%;
+}
+
+.minute-hand{
+    height: 45%;
+}
+
+.second-hand{
+   height: 55%;
+   transform-origin: 50% 80%; /*left, top*/
+   background-color: var(--accent);
+   margin-top: 5%;
+}
