@@ -25,8 +25,8 @@
 .clock-background{
     position: absolute;
     background-color: var(--background-dark);
-    width: 97%;
-    height: 97%;
+    width: 49em;
+    height: 49em;
     border-radius: 50%;
     box-shadow: 
         inset -10px -10px 30px var(--shadow-light), 
@@ -36,8 +36,8 @@
 .clock:before,
 .clock:after {
     left: 49%;
-    left: calc(50% - 4px);
-    width: 4px;
+    left: calc(50% - 0.5em);
+    width: 0.5em;
     height: 5em;
 }
 
@@ -76,12 +76,21 @@
 
 .hour-hand,
 .minute-hand,
-.second-hand {
-    z-index:2;
-    left: 50%;
+.second-hand,
+.clock-center {
+   
     position: absolute;
-    width:0.5em;
     background-color:var(--background);
+}
+
+.hour-hand,
+.minute-hand,
+.second-hand{
+    z-index:3;   
+    left: 50%;
+    left: calc(50% - 0.5em);
+    width:0.5em;
+    
     border-radius: 2px;
 }
 
@@ -90,20 +99,35 @@
     box-shadow: 
     -2px -2px 4px var(--shadow-light), 
     2px 2px 4px var(--shadow-dark);
-    transform-origin: 50% 100%; /*left, top*/
+    transform-origin: 50% 99%; /*left, top*/
 }
 
 .hour-hand{
     height: 25%;
+    top: 25%;
+
+    transform: rotate(27deg);
 }
 
 .minute-hand{
     height: 45%;
+    top: 5%;
+    transform: rotate(90deg);
 }
 
 .second-hand{
    height: 55%;
    transform-origin: 50% 80%; /*left, top*/
    background-color: var(--accent);
-   margin-top: 5%;
+   top: 5%;
+}
+
+.clock-center{
+    z-index: 4;
+    border-radius: 50%;
+    height: 1em;
+    width: 1em;
+    top: 50%;
+    left: calc(50% - 1em);
+    top: calc(50% - 1em);
 }
