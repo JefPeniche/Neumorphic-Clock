@@ -105,14 +105,11 @@
 .hour-hand{
     height: 25%;
     top: 25%;
-
-    transform: rotate(27deg);
 }
 
 .minute-hand{
     height: 45%;
     top: 5%;
-    transform: rotate(90deg);
 }
 
 .second-hand{

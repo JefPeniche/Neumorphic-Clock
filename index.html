@@ -12,22 +12,12 @@
     <div class="clock"> 
         <div class="clock-background">
             <span class="horizontal-indicators"></span>  
-            <span class="second-hand" id="second"></span>      
-            <span class="hour-hand"></span>      
-            <span class="minute-hand"></span>           
+            <span class="second-hand" id="seconds"></span>      
+            <span class="minute-hand" id="minutes" ></span>
+            <span class="hour-hand" id="hours"></span>                 
         </div>
         <!-- vertical-indicators-->
     </div>
 </body>
-<script>
-    function clockUpdate() {
- var now = new Date();
- document.getElementById("second").style.transform = 'rotate(' + (
-    now.getSeconds() * 6
-  ) + 'deg)';
-}
-
-clockUpdate();
-setInterval(clockUpdate, 1000);
-</script>
+<script src="analog.js"></script>
 </html>
