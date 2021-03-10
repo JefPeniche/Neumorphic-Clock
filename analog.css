@@ -1,6 +1,4 @@
-
-
-.clock {
+.analog {
     position:relative;
     width:50em;
     height:50em;
@@ -14,27 +12,16 @@
         10px 10px 30px var(--shadow-dark);
 }
 
-.clock:before,
-.clock:after,
+.analog:before,
+.analog:after,
 .horizontal-indicators:before,
 .horizontal-indicators:after {
     position:absolute;
     text-align:center;
 }
 
-.clock-background{
-    position: absolute;
-    background-color: var(--background-dark);
-    width: 49em;
-    height: 49em;
-    border-radius: 50%;
-    box-shadow: 
-        inset -10px -10px 30px var(--shadow-light), 
-        inset 10px 10px 30px var(--shadow-dark);
-}
-
-.clock:before,
-.clock:after {
+.analog:before,
+.analog:after {
     left: 49%;
     left: calc(50% - 0.5em);
     width: 0.5em;
@@ -49,8 +36,8 @@
     height: 4px;
 }
 
-.clock:before, 
-.clock:after,
+.analog:before, 
+.analog:after,
 .horizontal-indicators:before,
 .horizontal-indicators::after {
     z-index: 2; 
@@ -62,12 +49,16 @@
         2px 2px 4px var(--shadow-dark);
 }
 
-.clock::before{
-    top:1em;
+.analog::before{
+    top:0em;
 }
 
-.clock:after {
-    bottom:1em;
+.analog:after {
+    bottom:0em;
+}
+
+.horizontal-indicators::before {
+    left:0em;
 }
 
 .horizontal-indicators:after {

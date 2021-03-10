@@ -7,17 +7,37 @@
     <title>Neumorphic Clock</title>
     <link rel="stylesheet" href="style-white.css">
     <link rel="stylesheet" href="analog.css">
+    <link rel="stylesheet" href="digital.css">
 </head>
 <body>
-    <div class="clock"> 
-        <div class="clock-background">
-            <span class="horizontal-indicators"></span>  
-            <span class="second-hand" id="seconds"></span>      
-            <span class="minute-hand" id="minutes" ></span>
-            <span class="hour-hand" id="hours"></span>                 
-        </div>
+    <div class="analog"> 
+        <span class="horizontal-indicators"></span>  
+        <span class="second-hand" id="seconds"></span>      
+        <span class="minute-hand" id="minutes" ></span>
+        <span class="hour-hand" id="hours"></span>                 
         <!-- vertical-indicators-->
     </div>
+    <div class="digital">
+        <div class="hour-numbers">
+            <div class="first-number">
+                <span class="digital-bit-on position-0"></span>
+                <span class="digital-bit-on position-1"></span>
+                <span class="digital-bit-off position-2"></span>
+                <span class="digital-bit-on position-3"></span>
+                <span class="digital-bit-on position-4"></span>
+                <span class="digital-bit-off position-5"></span>
+                <span class="digital-bit-on position-6"></span>
+            </div>
+        </div>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <div class="minute-numbers"></div>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <div class="second-numbers"></div>
+    </div>
+
+
 </body>
 <script src="analog.js"></script>
 </html>
