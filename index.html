@@ -5,84 +5,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Neumorphic Clock</title>
-    <link rel="stylesheet" href="style-white.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="dark.css">
     <link rel="stylesheet" href="analog.css">
     <link rel="stylesheet" href="digital.css">
+    <link rel="stylesheet" href="toggle.css">
 </head>
 <body>
-    <div class="analog"> 
-        <span class="horizontal-indicators"></span>  
-        <span class="second-hand" id="seconds"></span>      
-        <span class="minute-hand" id="minutes" ></span>
-        <span class="hour-hand" id="hours"></span>                 
-        <!-- vertical-indicators-->
-    </div>
-    <div class="digital">
-        <div class="numbers-container" id="digitalContainer">
-            <div class="number">
-                <span class="digital-off position-0"></span>
-                <span class="digital-on position-1"></span>
-                <span class="digital-on position-2"></span>
-                <span class="digital-off position-3"></span>
-                <span class="digital-off position-4"></span>
-                <span class="digital-off position-5"></span>
-                <span class="digital-off position-6"></span>
-            </div>
-            <div class="number">
-                <span class="digital-on position-0"></span>
-                <span class="digital-on position-1"></span>
-                <span class="digital-on position-2"></span>
-                <span class="digital-on position-3"></span>
-                <span class="digital-on position-4"></span>
-                <span class="digital-on position-5"></span>
-                <span class="digital-on position-6"></span>
-            </div>
-            <div class="digital-separator">
-                <span class="dot"></span>
-                <span class="dot"></span>
-            </div>
-            <div class="number">
-                <span class="digital-on position-0"></span>
-                <span class="digital-on position-1"></span>
-                <span class="digital-off position-2"></span>
-                <span class="digital-on position-3"></span>
-                <span class="digital-on position-4"></span>
-                <span class="digital-off position-5"></span>
-                <span class="digital-on position-6"></span>
-            </div>
-            <div class="number">
-                <span class="digital-on position-0"></span>
-                <span class="digital-off position-1"></span>
-                <span class="digital-on position-2"></span>
-                <span class="digital-on position-3"></span>
-                <span class="digital-off position-4"></span>
-                <span class="digital-on position-5"></span>
-                <span class="digital-on position-6"></span>
-            </div>
-            <div class="digital-separator">
-                <span class="dot"></span>
-                <span class="dot"></span>
-            </div>
-            <div class="number">
-                <span class="digital-on position-0"></span>
-                <span class="digital-on position-1"></span>
-                <span class="digital-off position-2"></span>
-                <span class="digital-on position-3"></span>
-                <span class="digital-on position-4"></span>
-                <span class="digital-off position-5"></span>
-                <span class="digital-on position-6"></span>
-            </div>
-            <div class="number">
-                <span class="digital-on position-0"></span>
-                <span class="digital-on position-1"></span>
-                <span class="digital-off position-2"></span>
-                <span class="digital-on position-3"></span>
-                <span class="digital-on position-4"></span>
-                <span class="digital-off position-5"></span>
-                <span class="digital-on position-6"></span>
+    <div class="clocks">
+        <div class="analog"> 
+            <span class="horizontal-indicators"></span>  
+            <span class="second-hand" id="seconds"></span>      
+            <span class="minute-hand" id="minutes" ></span>
+            <span class="hour-hand" id="hours"></span>                 
+            <!-- vertical-indicators-->
+        </div>
+        <div class="digital">
+            <div class="numbers-container" id="digitalContainer">
             </div>
         </div>
     </div>
+    <div class="mode">
+        <p class="text">Light mode</p>
+        <label class="toggle">
+            <input id="mode" type="checkbox" class="checkbox">
+            <span class="slider"></span>
+        </label>
+        <p class="text">Dark mode</p>
+    </div>
+    <div class="clock-style">
+        <p class="text">Analog</p>
+        <label class="toggle">
+            <input id="clock-style" type="checkbox" class="checkbox">
+            <span class="slider"></span>
+        </label>
+        <p class="text">Digital</p>
+    </div>
+    
 
 
 </body>
