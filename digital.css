@@ -1,7 +1,6 @@
 .digital{
     width: 75em;
     height: 35em;
-    margin: 10em auto;
     background-color: var(--background);
     box-shadow: 
         -10px -10px 30px var(--shadow-light), 
@@ -30,7 +29,7 @@
 }
 
 .digital-on{
-    background-color: var(--shadow-light);
+    background-color: var(--accent);
     box-shadow: 
         -1px -1px 2px var(--shadow-light), 
         1px 1px 2px var(--shadow-dark);
@@ -40,7 +39,7 @@
     background-color: var(--background-dark);
     box-shadow: 
         inset -1px -1px 2px var(--shadow-light), 
-        inset 1px 1px 2px var(--shadow-light)
+        inset 1px 1px 2px var(--shadow-dark)
 }
 
 .position-1,

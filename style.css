@@ -11,6 +11,7 @@
 
 body, .clocks, .mode, .clock-style{
     display: flex;
+    justify-content: center;
     align-items: center;
 }
 
@@ -27,6 +28,8 @@ body{
 
 .clocks{
     width: 50%;
+    height: 60vh;
+    margin-bottom: 5em;
 }
 
 .text{
