@@ -1,11 +1,13 @@
 .analog {
     position:relative;
-    width:50em;
-    height:50em;
+    min-width:50em;
+    min-height:50em;
     border-radius:50%;
     display: flex;
     justify-content: center;
     align-items: center;
+    -webkit-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
     box-shadow: 
         -10px -10px 30px var(--shadow-light), 
         10px 10px 30px var(--shadow-dark);
@@ -17,6 +19,8 @@
 .horizontal-indicators:after {
     position:absolute;
     text-align:center;
+    -webkit-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
 }
 
 .analog:before,
@@ -90,6 +94,8 @@
     -2px -2px 4px var(--shadow-light), 
     2px 2px 4px var(--shadow-dark);
     transform-origin: 50% 99%; /*left, top*/
+    -webkit-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
 }
 
 .hour-hand{

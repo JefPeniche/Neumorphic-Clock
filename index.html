@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Neumorphic Clock</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="dark.css">
     <link rel="stylesheet" href="light.css">
     <link rel="stylesheet" href="analog.css">
     <link rel="stylesheet" href="digital.css">
@@ -13,14 +14,14 @@
 </head>
 <body>
     <div class="clocks">
-        <div class="analog">
+        <div id="clockAnalog" class="analog">
             <span class="horizontal-indicators"></span>  
             <span class="second-hand" id="seconds"></span>      
             <span class="minute-hand" id="minutes" ></span>
             <span class="hour-hand" id="hours"></span>                 
             <!-- vertical-indicators-->
         </div>
-        <div class="digital">
+        <div  id="clockDigital" class="digital">
             <div class="numbers-container" id="digitalContainer">
             </div>
         </div>
@@ -28,7 +29,7 @@
     <div class="mode">
         <p class="text">Light Mode</p>
         <label class="toggle">
-            <input id="mode" type="checkbox" class="checkbox">
+            <input id="mode" type="checkbox" class="checkbox" onclick="modeChanged()">
             <span class="slider"></span>
         </label>
         <p class="text">Dark Mode</p>
@@ -36,7 +37,7 @@
     <div class="clock-style">
         <p class="text">Analog</p>
         <label class="toggle">
-            <input id="clock-style" type="checkbox" class="checkbox">
+            <input id="clockStyle" type="checkbox" class="checkbox" onclick="styleChanged()">
             <span class="slider"></span>
         </label>
         <p class="text">Digital</p>
@@ -45,6 +46,7 @@
 
 
 </body>
+<script src="main.js"></script>
 <script src="analog.js"></script>
 <script src="digital.js"></script>
 </html>

@@ -17,8 +17,9 @@
     border-radius: 4em;
     background-color: var(--background-dark);
     border: solid 0.25em var(--background);
-    -webkit-transition: all .5s ease-in-out;
-    transition: all .5s ease-in-out;
+    -webkit-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+
     box-shadow: 
         -2px -2px 4px var(--shadow-light), 
         2px 2px 4px var(--shadow-dark),
@@ -35,8 +36,8 @@
     left: .5em;
     top: .5em;
     background-color: var(--background);
-    -webkit-transition: all .5s ease-in-out;
-    transition: all .5s ease-in-out;
+    -webkit-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
     box-shadow: 
         -2px -2px 4px var(--shadow-light), 
         2px 2px 4px var(--shadow-dark);
