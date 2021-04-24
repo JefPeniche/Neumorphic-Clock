@@ -1,14 +1,16 @@
 .digital{
-    min-width: 75em;
+    min-width: 70em;
     min-height: 35em;
     background-color: var(--background);
-    box-shadow: 
-        -10px -10px 30px var(--shadow-light), 
-        10px 10px 30px var(--shadow-dark);
     display: flex;
     justify-content: center;
     align-items: center;
+    -webkit-transition: all 1s ease-in-out;
     transition: all 1s ease-in-out;
+    position: absolute;
+    box-shadow: 
+        -10px -10px 30px var(--shadow-light), 
+        10px 10px 30px var(--shadow-dark);
 }
 
 .numbers-container{

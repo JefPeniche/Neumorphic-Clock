@@ -25,15 +25,15 @@ body{
     transition: all 1s ease-in-out;
 }
 
-.clocks, .mode, .clock-style{
+.mode, .clock-style{
     margin-top: 4em;
 }
 
 .clocks{
+    position: relative;
     width: 50%;
-    height: 60vh;
-    margin-bottom: 5em;
-    overflow: auto;
+    height: 60em;
+    overflow: hidden;
     white-space: nowrap;
 }
 

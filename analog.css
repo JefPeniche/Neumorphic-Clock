@@ -1,5 +1,5 @@
 .analog {
-    position:relative;
+    position:absolute;
     min-width:50em;
     min-height:50em;
     border-radius:50%;
@@ -72,7 +72,6 @@
 .minute-hand,
 .second-hand,
 .clock-center {
-   
     position: absolute;
     background-color:var(--background);
 }
@@ -84,7 +83,6 @@
     left: 50%;
     left: calc(50% - 0.5em);
     width:0.5em;
-    
     border-radius: 2px;
 }
 
@@ -109,10 +107,10 @@
 }
 
 .second-hand{
-   height: 55%;
-   transform-origin: 50% 80%; /*left, top*/
-   background-color: var(--accent);
-   top: 5%;
+    height: 55%;
+    transform-origin: 50% 80%; /*left, top*/
+    background-color: var(--accent);
+    top: 5%;
 }
 
 .clock-center{

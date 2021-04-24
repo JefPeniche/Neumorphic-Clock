@@ -5,11 +5,11 @@ const clockDigital = document.querySelector("#clockDigital");
 
 const styleChanged = () =>{
     if(toggleStyle.checked){
-        clockAnalog.style.display= "flex";
-        clockDigital.style.display= "flex";
+        clockAnalog.style.left= "-100%";
+        clockDigital.style.left= "calc(50% - 35em)";
     }else{
-        clockAnalog.style.display= "flex";
-        clockDigital.style.display= "flex";
+        clockAnalog.style.left= "calc(50% - 25em)";
+        clockDigital.style.left= "-100%";
     }
 }
 
